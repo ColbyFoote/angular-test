@@ -1,0 +1,13 @@
+<p
+  [ngStyle]="{backgroundColor: getColor()}"
+  [ngClass]="{online: serverStatus === 'online'}">
+  {{ 'Server' }} with ID {{ serverID }} is {{ getServerStatus() }}
+  <button
+    type="button"
+    class = "close"
+    aria-label="Close"
+    (click) = "onRemoveServer()">
+
+    <span aria-hidden="true">&times;</span>
+  </button>
+</p>
